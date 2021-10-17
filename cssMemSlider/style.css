@@ -102,8 +102,30 @@ input[name="control"] {
   transition: all 1s ease;
 }
 
-#radio1:not(:disabled):active ~ .slider__controls > span {
+/* #radio1:not(:disabled):active ~ .slider__controls > span {
   background-color: lightseagreen;
+} */
+
+#radio1:checked ~ .slider__controls > .bar1 > span {
+  background-color: magenta;
+  opacity: 0.5;
+}
+
+#radio2:checked ~ .slider__controls > .bar2 > span {
+  background-color: magenta;
+  opacity: 0.5;
+}
+#radio3:checked ~ .slider__controls > .bar3 > span {
+  background-color: magenta;
+  opacity: 0.5;
+}
+#radio4:checked ~ .slider__controls > .bar4 > span {
+  background-color: magenta;
+  opacity: 0.5;
+}
+#radio5:checked ~ .slider__controls > .bar5 > span {
+  background-color: magenta;
+  opacity: 0.5;
 }
 
 #radio1:checked ~ .slider__slides > .slide1 {
